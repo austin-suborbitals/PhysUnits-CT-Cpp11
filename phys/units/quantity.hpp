@@ -315,6 +315,8 @@ public:
      */
     constexpr value_type magnitude() const { return m_value; }
 
+    operator double() { return magnitude(); }
+
     /**
      * the quantity's dimensions.
      */
